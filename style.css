@@ -7,7 +7,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #00df70;
+  background-color: #217adf;
 }
 
 .topnav a {
@@ -67,7 +67,7 @@ body {
     padding: 25px;
     background: #fff;
     height: auto;
-    top: 30%;
+    top: 10%;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 .col-12{
@@ -86,7 +86,7 @@ body {
     /* margin: auto; */
     justify-content: center;
     display: flex;
-    background:#00df70;
+    background:#217adf;
     text-align: center;
     width: auto;
     border:none;
@@ -117,7 +117,7 @@ body {
     list-style: none;
 }
 .icons{
-    background: #00df70;
+    background: #217adf;
     width:30px;
     height: 30px;
     border-radius: 50%;
@@ -134,7 +134,7 @@ body {
     transform: scale(1.05);
 }
 .content:before {
-    background:#00df70;
+    background:#217adf;
     content: '';
     position: absolute;
     width: inherit;
@@ -193,7 +193,7 @@ h2{
 }
 .underline{
     padding-top: 15px;
-    border-bottom: 6px solid #00df70;
+    border-bottom: 6px solid #217adf;
     transition: width .3s;
     line-height: 3px;
     /* margin: auto; */
@@ -272,7 +272,7 @@ h3.strike{
     margin:0  10px;
     color: #FFF !important;
     border-radius: 50%;
-    background: #00df70;
+    background: #217adf;
 }
 .card-section-last li.icon a{
     color: #FFF;
@@ -298,9 +298,9 @@ h3.strike{
     background: #fff;
 }
 .logo img{
-    max-width: 50px;
-    max-height: 50px;
-    transform: rotate(45deg);
+    max-width: 120px;
+    max-height: 70px;
+    transform: rotate(0deg);
 }
 nav ul {
     display: flex;
@@ -323,7 +323,7 @@ nav ul {
 
 .right{
     width: calc(100% - 70%);
-    background: #00df70;
+    background: #217adf;
     display: flex;
     height: inherit;
 }
@@ -369,4 +369,38 @@ nav ul {
       width: 100%;
       flex: 1;
   }
+}
+
+.slider { position: relative; overflow: hidden; }
+.slide { display: none; }
+.slide.active { display: flex; }
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0.7;
+  padding: 0 10px;
+}
+.slider-arrow.prev { left: 10px; }
+.slider-arrow.next { right: 10px; }
+@media (max-width: 768px) {
+  .slide.active { flex-direction: column; }
+}
+
+
+.slide {
+  display: none;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+.slide.active {
+  display: flex;
+  opacity: 1;
+  transform: translateX(0);
 }

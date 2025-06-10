@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>CompanyName - Landing Page</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -12,9 +14,9 @@
   <body>
     <div class="topnav" id="myTopnav">
       <div class="nav-brand">
-        <a href="#" class="logo"><img src="./svg/logo.svg" alt="logo "/></a>
+        <a href="#" class="logo"><img src="./images/bird_2.jpg" alt="CompanyName logo "/></a>
       </div>
-      <nav class="nav navbar">
+      <nav class="nav navbar" aria-label="Main navigation">
         <ul>
           <li>
             <a href="#home" class="active">Home</a>
@@ -26,83 +28,156 @@
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#about">Blog</a>
+            <a href="#blog">Blog</a>
           </li>
           <li>
-            <a href="#about">Portfolio</a>
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="#about">Pricing</a>
+            <a href="#pricing">Pricing</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Toggle navigation">
         <i class="fa fa-bars"></i>
       </a>
     </div>
 
-    <section class="content-section">
-        
-      <div class="left animated fadeInLeft">
-        <div class="icons-content ">
-            <ul class=" ">
-                <li  class="icons"><img src="./svg/leftarrow.svg" >
-                </li>
-                
-                <li class="icons"><img src="./svg/rightarrow.svg" > </li>
-            </ul>
-        </div>
-        <img src="./images/bungalow-house-exterior.jpg" alt="banner image" />
-      </div>
-
-      <div class="right animated fadeIn">
-        <div class="content animated zoomIn delay-1s">
-          <div class="col-12 animated fadeInRight delay-2s">
-            <h2 class="underline animted bounInLeft delay-3s">
-              Stay </h2>
-              <h2 class="underline">
-                    With Techoners
-            </h2>
-            <p>
-              Web Design & Development. We update wordpress core and plugins to
-              keep your site protected. CMS Based Solution.
-            </p>
+    <section class="content-section slider-section">
+      <div class="slider">
+        <!-- Slide 1 -->
+        <div class="slide animated fadeInLeft  active">
+          <div class="left  ">
+            <div class="icons-content">
+              <!-- You can remove these icons if you want only the main arrows below -->
+            </div>
+            <img src="./images/business-meeting-room-high-rise-office-building.jpg" alt="Business meeting room" />
           </div>
-          <div class="col-12 mr-tp-5 ">
-            <button class="btn mr-auto animated fadeInLeft delay-2s" >
-              Learn More <img src="./svg/link.svg" alt="right-arrow" />
-            </button>
+          <div class="right  ">
+            <div class="content ">
+              <!-- animated zoomIn delay-1s removed -->
+              <div class="col-12 ">
+                <!-- /*animated fadeInRight delay-2s removed */ -->
+                <h2 class="underline ">Stay</h2>
+                <!-- animted bounInLeft delay-3s -->
+                <h2 class="underline">With CompanyName</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt nulla fugit blanditiis ratione praesentium quia laboriosam, quidem quas cupiditate fuga sint ipsum eius maiores provident eum itaque? Commodi, reprehenderit facere.</p>
+              </div>
+              <div class="col-12 mr-tp-5">
+                <button class="btn mr-auto ">
+                  <!-- animated fadeInLeft delay-2s -->
+                  Learn More <img src="./svg/link.svg" alt="right-arrow" />
+                </button>
+              </div>
+            </div>
+            <div class="social-media ">
+              <!-- animated fadeInLeft delay-3s -->
+              <ul>
+                <li><a href="#"><img src="./svg/social1.svg" alt="insta" /></a></li>
+                <li><a href="#"><img src="./svg/social2.svg" alt="insta" /></a></li>
+                <li><a href="#"><img src="./svg/social3.svg" alt="insta" /></a></li>
+                <li><a href="#"><img src="./svg/social4.svg" alt="insta" /></a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="social-media animated fadeInLeft delay-3s">
-          <ul>
-            <li>
-              <a href=""><img src="./svg/social1.svg" alt="insta"/></a>
-            </li>
-            <li>
-              <a href=""><img src="./svg/social2.svg" alt="insta"/></a>
-            </li>
-            <li>
-              <a href=""><img src="./svg/social3.svg" alt="insta"/></a>
-            </li>
-            <li>
-              <a href=""><img src="./svg/social4.svg" alt="insta"/></a>
-            </li>
-          </ul>
+        <!-- Slide 2 -->
+        <div class="slide animated fadeInLeft  ">
+          <div class="left ">
+            <img src="./images/business-meeting-room-high-rise-office-building.jpg" alt="Business meeting room" />
+          </div>
+          <div class="right ">
+            <div class="content ">
+              <div class="col-12 ">
+                <h2 class="underline animted bounInLeft delay-3s">Innovate</h2>
+                <h2 class="underline">Slide 2 With Us</h2>
+                <p>Discover new solutions for your business. We help you grow and succeed with creative strategies and modern technology.</p>
+              </div>
+              <div class="col-12 mr-tp-5">
+                <button class="btn mr-auto animated fadeInLeft delay-2s">
+                  Get Started <img src="./svg/link.svg" alt="right-arrow" />
+                </button>
+              </div>
+            </div>
+            <div class="social-media ">
+              <ul>
+                <li><a href="#"><img src="./svg/social1.svg" alt="insta" /></a></li>
+                <li><a href="#"><img src="./svg/social2.svg" alt="insta" /></a></li>
+                <li><a href="#"><img src="./svg/social3.svg" alt="insta" /></a></li>
+                <li><a href="#"><img src="./svg/social4.svg" alt="insta" /></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="slide  animated fadeInLeft ">
+          <div class="left ">
+            <img src="./images/3d-rendering-luxury-business-meeting-working-room-executive-office.jpg" alt="Business meeting room" />
+          </div>
+          <div class="right  ">
+            <div class="content ">
+              <div class="col-12 ">
+                <h2 class="underline animted bounInLeft delay-3s">Innovate</h2>
+                <h2 class="underline">Slide 3 With Us</h2>
+                <p>Discover new solutions for your business. We help you grow and succeed with creative strategies and modern technology.</p>
+              </div>
+              <div class="col-12 mr-tp-5">
+                <button class="btn mr-auto animated fadeInLeft delay-2s">
+                  Get Started <img src="./svg/link.svg" alt="right-arrow" />
+                </button>
+              </div>
+            </div>
+            <div class="social-media ">
+              <ul>
+                <li><a href="#"><img src="./svg/social1.svg" alt="insta" /></a></li>
+                <li><a href="#"><img src="./svg/social2.svg" alt="insta" /></a></li>
+                <li><a href="#"><img src="./svg/social3.svg" alt="insta" /></a></li>
+                <li><a href="#"><img src="./svg/social4.svg" alt="insta" /></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="slide  animated fadeInLeft ">
+          <div class="left ">
+            <img src="./images/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash.jpg" alt="Business meeting room" />
+          </div>
+          <div class="right ">
+            <div class="content ">
+              <div class="col-12 ">
+                <h2 class="underline animted bounInLeft delay-3s">Innovate</h2>
+                <h2 class="underline">Slide 4 With Us</h2>
+                <p>Discover new solutions for your business. We help you grow and succeed with creative strategies and modern technology.</p>
+              </div>
+              <div class="col-12 mr-tp-5">
+                <button class="btn mr-auto animated fadeInLeft delay-2s">
+                  Get Started <img src="./svg/link.svg" alt="right-arrow" />
+                </button>
+              </div>
+            </div>
+            <div class="social-media ">
+              <ul>
+                <li><a href="#"><img src="./svg/social1.svg" alt="insta" /></a></li>
+                <li><a href="#"><img src="./svg/social2.svg" alt="insta" /></a></li>
+                <li><a href="#"><img src="./svg/social3.svg" alt="insta" /></a></li>
+                <li><a href="#"><img src="./svg/social4.svg" alt="insta" /></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="slider-arrow prev" aria-label="Previous slide">&#10094;</button>
+        <button class="slider-arrow next" aria-label="Next slide">&#10095;</button>
       </div>
     </section>
-    <section class="card-section scroll-animations">
+
+    <section class="card-section  scroll-animationss">
         <div class="card card-service animated fadeInUp">
             <div class="card-content animated">
                 <h2 class="underline">Our Services</h2>
                 <div class="flex">
                         <p>
-                                Web Design & Development. We update wordpress core and plugins to
-                                keep your site protected. CMS Based Solution.
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt veniam atque ducimus provident totam qui sed dolores nemo magnam, libero explicabo, voluptas ab accusantium aut eius consequuntur enim voluptates deserunt.
                       </p>
                 
           <div class="col-12">
@@ -119,8 +194,7 @@
                     <h3 >Web Development</h3>
                     <div class="flex">
                             <p> 
-                                We update wordpress core and plugins to keep your site protected. We keep upto 30 daily backup copies of your wordpress site.
-                                Your website will be safe even if there are vulnarable accounts.
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non magnam error culpa, libero esse aliquam ipsum ratione dignissimos, quisquam aut eaque. Nihil expedita voluptates reprehenderit quia ipsa non voluptatum.
                           </p>
                     
                     </div>
@@ -132,8 +206,7 @@
                         <h3 >Graphic Design</h3>
                         <div class="flex">
                                 <p>
-                                    If a majot vulnarablity appears, we develop & apply server level fixes, You can reach our team at any time , day or night. If you're not completely satisfied.                              </p>
-                        
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit beatae molestias tempora voluptates quae, ad nobis natus ea blanditiis soluta iure aut, repudiandae, non repellendus quis. Sequi, quia nesciunt?
                         </div>
                     </div>
                 </div>
@@ -141,7 +214,7 @@
     <section class="content-section card-section1 scroll-animations">
         
             <div class="left animated fadeInLeft delay-2s">
-              <img src="./images/bungalow-house-exterior.jpg" alt="banner image" />
+              <img src="./images/business-meeting-room-high-rise-office-building.jpg" alt="banner image" />
             </div>
       
             <div class="right zoomInUp animated delay-2s">
@@ -151,8 +224,7 @@
                     About Us </h2>
                     <h3 class="sub-heading">Great Business Comes With Great Showcasing.</h3>
                   <p>
-                Creating a great online business takes more than you can ever imagine. Techoners is your ultimate support to stand out from the commoner crowd.
-            We don't work for the sake of earnings we work to satisfy our hunger for excellence.  </p>
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis doloremque repellendus placeat iste esse illum reprehenderit asperiores ad vel dicta voluptas mollitia consequatur laudantium non, odio labore deserunt, est facilis! </p>
                 </div>
                 <div class="col-12  mr-tp-30">
                   <button class="btn btn-large">
@@ -186,23 +258,23 @@
         </div>   
         <div class="content-last ">
                 <div class="flex animated">
-            <p> Email &nbsp; :  techoners@info.com</p>
-            <p> Call &nbsp; :  + 8801711 734638</p>
+            <p> Email &nbsp; :  CompanyName@info.com</p>
+            <p> Call &nbsp; :  + 1234567890</p>
             <ul>
                 <li class="icon">
-                    <a href="https//facebook.com" ><i class='fa fa-facebook'></i></a>
+                    <a href="https://facebook.com" ><i class='fa fa-facebook'></i></a>
                 </li>
                 
                 <li class="icon">
-                        <a href="https//twitter.com" ><i class='fa fa-twitter'></i></a>
+                        <a href="https://twitter.com" ><i class='fa fa-twitter'></i></a>
                     </li>
                     
                 <li class="icon">
-                        <a href="https//google.com" ><i class='fa fa-google'></i></a>
+                        <a href="https://google.com" ><i class='fa fa-google'></i></a>
                     </li>
                     
                 <li class="icon">
-                        <a href="https//linkedin.com" ><i class='fa fa-linkedin'></i></a>
+                        <a href="https://linkedin.com" ><i class='fa fa-linkedin'></i></a>
                     </li>
             </ul>
         </div>
@@ -212,9 +284,9 @@
              <p>Site Map</p>
          </div>
          <div class="flex flex-last animated">
-                <p>Techoners <br/>
-                House-194, Road-9, First Phase,<br/>
-            Khulna 9100</p>
+                <p>CompanyName <br/>
+                ABC-123, Road-123,<br/>
+            City,Country</p>
                 <div class="col-12  mr-tp-30 btn-section">
                         <button class="btn btn-large">
                           Live Chat <img src="./svg/link.svg" alt="right-arrow" />
@@ -225,11 +297,9 @@
             </div>
 
     </section>          
-    
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <footer class="footer">
+      <p>© 2023 CompanyName. All rights reserved.</p>
+    </footer>
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -239,25 +309,67 @@
           x.className = "topnav";
         }
       }
-      $(document).ready(function() {
-        // Check if element is scrolled into view
-        function isScrolledIntoView(elem) {
-          var docViewTop = $(window).scrollTop();
-          var docViewBottom = docViewTop + $(window).height();
       
-          var elemTop = $(elem).offset().top;
-          var elemBottom = elemTop + $(elem).height();
-      
-          return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-        }
-        // If element is scrolled into view, fade it in
-        $(window).scroll(function() {
-          $('.scroll-animations .animated').each(function() {
-            if (isScrolledIntoView(this) === true) {
-              $(this).addClass('fadeInLeft');
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const animatedElements = document.querySelectorAll('.scroll-animations .animated');
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('fadeInLeft');
+              observer.unobserve(entry.target);
             }
           });
+        }, { threshold: 0.1 });
+        animatedElements.forEach(el => observer.observe(el));
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const slides = document.querySelectorAll('.slider .slide');
+        const prevBtn = document.querySelector('.slider-arrow.prev');
+        const nextBtn = document.querySelector('.slider-arrow.next');
+        let current = 0;
+        let timer;
+
+        function showSlide(idx) {
+          slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === idx);
+          });
+          current = idx;
+        }
+
+        function nextSlide() {
+          showSlide((current + 1) % slides.length);
+        }
+
+        function prevSlide() {
+          showSlide((current - 1 + slides.length) % slides.length);
+        }
+
+        function startAutoSlide() {
+          timer = setInterval(nextSlide, 4000);
+        }
+
+        function stopAutoSlide() {
+          clearInterval(timer);
+        }
+
+        prevBtn.addEventListener('click', () => {
+          prevSlide();
+          stopAutoSlide();
+          startAutoSlide();
         });
+
+        nextBtn.addEventListener('click', () => {
+          nextSlide();
+          stopAutoSlide();
+          startAutoSlide();
+        });
+
+        showSlide(0);
+        startAutoSlide();
       });
     </script>
   </body>
